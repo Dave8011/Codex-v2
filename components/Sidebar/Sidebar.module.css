@@ -1,0 +1,63 @@
+/*
+This CSS file is *only* for the Sidebar component's content.
+The main layout (width, etc.) is handled by styles/Home.module.css
+*/
+
+.title {
+  font-size: 1.08em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--cf-btn2);
+  margin: 23px 0 16px 30px;
+  text-shadow: 0 2px 8px #ffb86a33;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  padding: 13px 25px;
+  background: none;
+  border: none;
+  color: var(--cf-txt);
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 0 24px 24px 0;
+  margin-bottom: 2px;
+  font-weight: 500;
+  transition: background 0.13s, color 0.13s, box-shadow 0.13s;
+  position: relative;
+  /* Required for button text */
+  width: 100%;
+  text-align: left;
+}
+.item:hover,
+.item:focus {
+  background: var(--cf-card);
+  color: var(--cf-btn);
+  box-shadow: 2px 2px 16px #ffb86c11;
+}
+
+.icon {
+  font-size: 1.24em;
+  margin-right: 18px;
+}
+
+.label {
+  /* Prevent long filenames from breaking layout */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.up {
+  background: var(--cf-card);
+  color: var(--cf-btn2);
+}
+
+.empty {
+  color: var(--cf-muted);
+  font-size: 1em;
+  text-align: center;
+  margin-top: 30px;
+  padding: 0 10px;
+}
