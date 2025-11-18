@@ -1,0 +1,88 @@
+/* ===== THEME COLORS (v2) ===== */
+
+:root,
+[data-theme="unique"] {
+  --cf-bg: #272129;
+  --cf-sidebar: #1e1921;
+  --cf-accent: linear-gradient(90deg, #ffb86c, #ff79c6);
+  --cf-accent2: #ffb86c;
+  --cf-card: #35283d;
+  --cf-header: #312438;
+  --cf-txt: #f2dcef;
+  --cf-txt2: #f8e9fc;
+  --cf-muted: #a098b7;
+  --cf-border: #3a3142;
+  --cf-btn: #ff79c6;
+  --cf-btn2: #ffb86c;
+  --cf-btn-hover: #f2a5e3;
+  --cf-status-good: #7dfc8a;
+  --cf-status-bad: #ff4f7c;
+  --cf-lang-bg: #20181e;
+  --cf-shadow: 0 4px 32px 0 #22082036;
+}
+[data-theme="light"] {
+  --cf-bg: #f9e9d9;
+  --cf-sidebar: #fff1e5;
+  --cf-accent: linear-gradient(90deg, #ffb86c, #ff79c6);
+  --cf-accent2: #ffb86c;
+  --cf-card: #fff7f2;
+  --cf-header: #fff4e6;
+  --cf-txt: #42284a;
+  --cf-txt2: #7c5175;
+  --cf-muted: #b18cb6;
+  --cf-border: #f1cfdd;
+  --cf-btn: #ff79c6;
+  --cf-btn2: #ffb86c;
+  --cf-btn-hover: #ffb3e1;
+  --cf-status-good: #2f9e44;
+  --cf-status-bad: #d7263d;
+  --cf-lang-bg: #f5eaf2;
+  --cf-shadow: 0 5px 25px 0 #ffc2df55;
+}
+[data-theme="dark"] {
+  --cf-bg: #19171b;
+  --cf-sidebar: #19171a;
+  --cf-accent: linear-gradient(90deg, #80bfff, #aaffaa);
+  --cf-accent2: #80bfff;
+  --cf-card: #242434;
+  --cf-header: #20202a;
+  --cf-txt: #e1eefa;
+  --cf-txt2: #7f9bbd;
+  --cf-muted: #4d5c74;
+  --cf-border: #222225;
+  --cf-btn: #80bfff;
+  --cf-btn2: #aaffaa;
+  --cf-btn-hover: #4cc9f0;
+  --cf-status-good: #80ffb7;
+  --cf-status-bad: #f95f62;
+  --cf-lang-bg: #14161c;
+  --cf-shadow: 0 3px 24px 0 #3f7fff36;
+}
+
+/* ===== BASE STYLES ===== */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--cf-bg);
+  color: var(--cf-txt);
+  font-family: "Fira Sans", "Segoe UI", "Menlo", "Monaco", monospace;
+  overflow-y: hidden; /* New: Full-screen app */
+  height: 100vh;
+  width: 100vw;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 5px;
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--cf-border);
+  border-radius: 6px;
+}
