@@ -1,0 +1,93 @@
+/*
+This CSS file is *only* for the Header component.
+*/
+
+.header {
+  background: var(--cf-header);
+  color: var(--cf-txt2);
+  padding: 0 2vw;
+  height: 62px;
+  min-height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  border-bottom: 1.5px solid var(--cf-border);
+  z-index: 150;
+  position: relative;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.38em;
+  letter-spacing: 1px;
+  background: var(--cf-accent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.actions {
+  display: flex;
+  gap: 16px;
+}
+
+/* Base button style for the header */
+.btn {
+  border: none;
+  padding: 9px 20px;
+  font-size: 0.8em; /* 0.8em of 1.3rem = 1.04em, good size */
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  color: var(--cf-txt2);
+  background: var(--cf-accent);
+  box-shadow: 0 2px 8px #0001;
+  transition: background 0.13s, color 0.13s, box-shadow 0.12s, scale 0.12s;
+}
+.btn:active {
+  scale: 0.97;
+}
+
+.themeBtn {
+  background: var(--cf-card);
+  color: var(--cf-btn);
+}
+.themeBtn:hover {
+  color: var(--cf-btn-hover);
+}
+
+.newBtn {
+  background: var(--cf-accent);
+  color: var(--cf-card);
+}
+.newBtn:hover {
+  background: var(--cf-btn-hover);
+}
+
+/* Mobile Sidebar Button */
+.mobileToggle {
+  display: none; /* Hidden on desktop */
+  background: var(--cf-card);
+  color: var(--cf-btn2);
+  font-size: 1.1em; /* 1.1em of 1.3rem = 1.43em */
+  font-weight: bold;
+  padding: 4px 12px;
+  line-height: 1;
+}
+.mobileToggle:hover {
+  color: var(--cf-btn-hover);
+}
+
+/* Responsive: Show mobile toggle on smaller screens */
+@media (max-width: 900px) {
+  .header {
+    padding: 0 4vw;
+  }
+  .logo {
+    font-size: 1.1em;
+  }
+  .mobileToggle {
+    display: block;
+  }
+}
