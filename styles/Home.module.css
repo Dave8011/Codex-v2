@@ -1,0 +1,58 @@
+/*
+This is a CSS Module.
+These class names (.root, .main, etc.) are SCOPED to index.js.
+They will not conflict with any other component.
+*/
+
+.root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.main {
+  display: flex;
+  flex: 1; /* This makes the main area fill the remaining height */
+  min-height: 0; /* Required for flex-shrink to work */
+}
+
+/* We will add the Header styles in its own file later */
+.header {
+  background: var(--cf-header);
+  color: var(--cf-txt2);
+  padding: 0 2vw;
+  height: 62px;
+  min-height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  border-bottom: 1.5px solid var(--cf-border);
+  z-index: 150;
+  position: relative;
+}
+
+/* We will add Sidebar styles in its own file later */
+.sidebar {
+  width: 299px;
+  min-width: 180px;
+  background: var(--cf-sidebar);
+  border-right: 2px solid var(--cf-border);
+  padding: 0 0 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  box-shadow: 2px 0 24px #0002;
+  overflow-y: auto;
+}
+
+/* We will add Editor styles in its own file later */
+.editorPanel {
+  flex: 1;
+  background: var(--cf-bg);
+  min-width: 0;
+  display: flex;
+  padding: 40px;
+}
